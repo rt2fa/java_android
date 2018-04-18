@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton opMoins;
     private RadioButton opCross;
     private RadioButton opSlash;
+    private ImageView kebab;
 
     double nbA, nbB, resultat;
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         opMoins = (RadioButton) findViewById(R.id.rbMoins);
         opCross = (RadioButton) findViewById(R.id.rBCross);
         opSlash = (RadioButton) findViewById(R.id.rbSlash);
+        kebab = (ImageView) findViewById(R.id.imageView2);
 
         opPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 nbA = Double.parseDouble(opeA.getText().toString());
                 nbB = Double.parseDouble(opeB.getText().toString());
+                if (nbB == 0) {
+                    kebab.setVisibility(View.VISIBLE);
+                }
                 resultat = nbA / nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }

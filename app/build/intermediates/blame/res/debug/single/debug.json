@@ -720,6 +720,10 @@
         "source": "/home/rt2fa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/7cb94932cac31ebd7a2a5a67386a5061/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "/home/rt2fa/AndroidStudioProjects/Lapplicationduchef/app/build/intermediates/res/merged/debug/drawable_kebab.png.flat",
+        "source": "/home/rt2fa/AndroidStudioProjects/Lapplicationduchef/app/src/main/res/drawable/kebab.png"
+    },
+    {
         "merged": "/home/rt2fa/AndroidStudioProjects/Lapplicationduchef/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/rt2fa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/7cb94932cac31ebd7a2a5a67386a5061/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
