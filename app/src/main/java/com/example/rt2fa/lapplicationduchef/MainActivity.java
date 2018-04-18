@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         opPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbA = Integer.parseInt(opeA.getText().toString());
-                nbB = Integer.parseInt(opeB.getText().toString());
+                nbA = Double.parseDouble(opeA.getText().toString());
+                nbB = Double.parseDouble(opeB.getText().toString());
                 resultat = nbA + nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         opMoins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbA = Integer.parseInt(opeA.getText().toString());
-                nbB = Integer.parseInt(opeB.getText().toString());
+                nbA = Double.parseDouble(opeA.getText().toString());
+                nbB = Double.parseDouble(opeB.getText().toString());
                 resultat = nbA - nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         opCross.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbA = Integer.parseInt(opeA.getText().toString());
-                nbB = Integer.parseInt(opeB.getText().toString());
+                nbA = Double.parseDouble(opeA.getText().toString());
+                nbB = Double.parseDouble(opeB.getText().toString());
                 resultat = nbA * nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         opSlash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbA = Integer.parseInt(opeA.getText().toString());
-                nbB = Integer.parseInt(opeB.getText().toString());
+                nbA = Double.parseDouble(opeA.getText().toString());
+                nbB = Double.parseDouble(opeB.getText().toString());
                 resultat = nbA / nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }
