@@ -9,7 +9,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button boutonCalcul; // déclarer un Button dans le java
     private EditText opeA;
     // déclarer un EditText
     private EditText opeB;
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        boutonCalcul = (Button) findViewById(R.id.bCalc);
         opeA = (EditText) findViewById(R.id.editOpA);
         opeB = (EditText) findViewById(R.id.editOpB);
         resultCalcul = (TextView) findViewById(R.id.textResult);
