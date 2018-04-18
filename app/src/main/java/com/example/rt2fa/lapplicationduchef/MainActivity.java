@@ -35,19 +35,39 @@ public class MainActivity extends AppCompatActivity {
         opCross = (RadioButton) findViewById(R.id.rBCross);
         opSlash = (RadioButton) findViewById(R.id.rbSlash);
 
-        boutonCalcul.setOnClickListener(new View.OnClickListener() {
+        opPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 nbA = Integer.parseInt(opeA.getText().toString());
                 nbB = Integer.parseInt(opeB.getText().toString());
-                if (opPlus.isChecked())
-                    resultat = nbA + nbB;
-                if (opMoins.isChecked())
-                    resultat = nbA - nbB;
-                if (opCross.isChecked())
-                    resultat = nbA * nbB;
-                if (opSlash.isChecked())
-                    resultat = nbA / nbB;
+                resultat = nbA + nbB;
+                resultCalcul.setText(Double.toString(resultat));
+            }
+        });
+        opMoins.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nbA = Integer.parseInt(opeA.getText().toString());
+                nbB = Integer.parseInt(opeB.getText().toString());
+                resultat = nbA - nbB;
+                resultCalcul.setText(Double.toString(resultat));
+            }
+        });
+        opCross.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nbA = Integer.parseInt(opeA.getText().toString());
+                nbB = Integer.parseInt(opeB.getText().toString());
+                resultat = nbA * nbB;
+                resultCalcul.setText(Double.toString(resultat));
+            }
+        });
+        opSlash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nbA = Integer.parseInt(opeA.getText().toString());
+                nbB = Integer.parseInt(opeB.getText().toString());
+                resultat = nbA / nbB;
                 resultCalcul.setText(Double.toString(resultat));
             }
         });
