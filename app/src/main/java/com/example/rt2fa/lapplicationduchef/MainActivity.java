@@ -75,5 +75,11 @@ public class MainActivity extends AppCompatActivity {
                 resultCalcul.setText(Double.toString(resultat));
             }
         });
+        kebab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kebab.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 }
